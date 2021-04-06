@@ -195,3 +195,12 @@ const func = function (id) {
 };
 let text = document.getElementById("text");
 func(text);
+
+  let myObj = {
+  objName: "Aнтон",
+  objAge: 19,
+};
+let objName = myObj.objName,
+  objAge = myObj.objAge;
+
+console.log(objName, objAge);
