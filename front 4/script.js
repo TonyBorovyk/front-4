@@ -1,4 +1,3 @@
-"use strict";
 // Частина _1_
 // Завдання 1 _ Асоціативний масив
 
@@ -11,14 +10,14 @@ var array = new Map([
 
 array.size;
 
-arr.set(15, "value4");
+array.set(15, "value4");
 
-arr.delete(10);
+array.delete(10);
 
 // Завдання 2 _ Масиви
 let arr = new Array();
-let arr = [];
 arr.push(10);
+
 // Завдання 3 _ Об'єкти
 let person = new Object();
 let person = {};
@@ -63,22 +62,20 @@ console.log(string3.indexOf("o"));
 
 // Завдання 5 _ Цикли
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 100; i) {
   console.log(i);
 }
 
-
-
 let i = 0;
-while (i < 3) { 
-    console.log(i);
+while (i < 3) {
+  console.log(i);
   i++;
+}
 
-
-let array = [1,2,3];
+let array = [1, 2, 3];
 
 for (let i in array) {
-  console.log(i);
+  console.log(array[i]);
 }
 // Частина _2_
 
@@ -144,6 +141,15 @@ console.log(func_1(3));
 
 console.log(func_2(3, 4));
 
+let myObj = {
+  objName: "Aнтон",
+  objAge: 19,
+};
+let objName = myObj.objName,
+  objAge = myObj.objAge;
+
+console.log(objName, objAge);
+
 // Частина _3_
 
 // Завдання 1 _ Продемонструвати різні варіанти замикань
@@ -188,6 +194,7 @@ person.rename("Tony");
 person.display();
 
 // Завдання 3 _ Продемонструвати замикання як обробник деякої події на html-сторінці; анонімна функція-обробник замикає в собі деякі дані і працює з ними
+
 const func = function (id) {
   id.addEventListener("click", function () {
     id.style.color = "blue";
@@ -195,12 +202,3 @@ const func = function (id) {
 };
 let text = document.getElementById("text");
 func(text);
-
-  let myObj = {
-  objName: "Aнтон",
-  objAge: 19,
-};
-let objName = myObj.objName,
-  objAge = myObj.objAge;
-
-console.log(objName, objAge);
