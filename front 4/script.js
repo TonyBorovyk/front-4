@@ -1,4 +1,86 @@
+"use strict";
 // Частина _1_
+// Завдання 1 _ Асоціативний масив
+
+//  додаємо три пари "ключ-значення"
+var array = new Map([
+  [10, "value1"],
+  [12, "value2"],
+  [14, "value3"],
+]);
+
+array.size;
+
+arr.set(15, "value4");
+
+arr.delete(10);
+
+// Завдання 2 _ Масиви
+let arr = new Array();
+let arr = [];
+arr.push(10);
+// Завдання 3 _ Об'єкти
+let person = new Object();
+let person = {};
+
+let person = {
+  name: "Anton",
+  age: 19,
+};
+
+for (let i in person) {
+  console.log(i);
+  console.log(person[i]);
+}
+
+let age = {
+  Anton: 19,
+  Andrey: 19,
+  Peter: 10,
+};
+
+let summa = 0;
+
+for (let i in age) {
+  summa += age[i];
+}
+
+console.log(summa);
+// Завдання 4 _ Рядки
+
+let string1 = "Це рядок";
+let string2 = "Hello";
+
+for (let char of "Hello") {
+  console.log(char);
+}
+
+console.log("anton".toUpperCase());
+
+let string3 = "Hello";
+
+console.log(string3.indexOf("o"));
+
+// Завдання 5 _ Цикли
+
+for (let i = 0; i < 100; i++) {
+  console.log(i);
+}
+
+
+
+let i = 0;
+while (i < 3) { 
+    console.log(i);
+  i++;
+
+
+let array = [1,2,3];
+
+for (let i in array) {
+  console.log(i);
+}
+// Частина _2_
 
 // Завдання 1 _ Оголошення функції (function declaration)
 function NameFunction() {
@@ -62,9 +144,9 @@ console.log(func_1(3));
 
 console.log(func_2(3, 4));
 
-// Частина _2_
+// Частина _3_
 
-// Завдання 2.1 _ Продемонструвати різні варіанти замикань
+// Завдання 1 _ Продемонструвати різні варіанти замикань
 function me() {
   let surname = "Borovyk";
 
@@ -83,7 +165,7 @@ function Mult(first_param) {
 let multiplication_ = Mult(15);
 console.log(multiplication_(10));
 
-// Завдання 2.2 _ Продемонструвати паттерн "модуль"
+// Завдання 2 _ Продемонструвати паттерн "модуль"
 
 let person = (function () {
   let data = { age: 10, name: "Mark" };
@@ -105,11 +187,11 @@ person.display();
 person.rename("Tony");
 person.display();
 
-// Завдання 2.3 _ Продемонструвати замикання як обробник деякої події на html-сторінці; анонімна функція-обробник замикає в собі деякі дані і працює з ними
+// Завдання 3 _ Продемонструвати замикання як обробник деякої події на html-сторінці; анонімна функція-обробник замикає в собі деякі дані і працює з ними
 const func = function (id) {
   id.addEventListener("click", function () {
     id.style.color = "blue";
   });
 };
-let d1 = document.getElementById("text");
-func(d1);
+let text = document.getElementById("text");
+func(text);
